@@ -51,6 +51,7 @@ public class StringOperateTest {
         String digitAndLower = CharMatcher.JAVA_DIGIT.or(CharMatcher.JAVA_LOWER_CASE).retainFrom(uuidStr);  //只保留数字以及小写字母
         String noDigit = CharMatcher.JAVA_DIGIT.replaceFrom(uuidStr, "*");  //用*替代所有数字
 
+
         System.out.println(noContro);
         System.out.println(spaced);
         System.out.println(onlyDigit);
@@ -66,7 +67,6 @@ public class StringOperateTest {
         String toUpperCamel = CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, name);//下划线小写词组转换为小写驼峰
         System.out.println(toLowerCamel);
         System.out.println(toUpperCamel);
-
     }
 
 
