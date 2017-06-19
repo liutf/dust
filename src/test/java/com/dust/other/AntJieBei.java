@@ -25,13 +25,13 @@ public class AntJieBei {
 
             System.out.println("------------------------------------");
 
-            System.out.println("贷款本金：" + bCapital + "  已还本金：" + rePayed);
 
             double reStore = bCapital / 12; //偿还本金
             double interest = (bCapital - rePayed) * rate * 30; //月利息
             double repayAmount = reStore + interest; //还款总额
 
 //            System.out.println("第" + i + "本金：" + reStore);
+            System.out.println("贷款本金：" + bCapital + "  已还本金：" + rePayed);
             System.out.println("第" + i + "月利息：" + interest);
             System.out.println("第" + i + "期还款总额为：" + repayAmount);
 
